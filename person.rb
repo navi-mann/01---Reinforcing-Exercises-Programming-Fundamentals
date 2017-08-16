@@ -1,14 +1,15 @@
-require "./exercise1.rb"
+emotions ={happy:[1,2,3],angry:[1,2,3],sad:[1,2,3]}
+
 class Person
 
-  def initialize (name,emotions)
+  def initialize(name,emot)
 
     @name = name
-    @emotions = emotions
+    @emotions = emot
 
   end
 
 end
 
-Person.new("navi",@emotions)
-Person.inspect
+new_person = Person.new("navi",emotions)
+puts new_person.inspect
